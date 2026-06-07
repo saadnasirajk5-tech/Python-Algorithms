@@ -2,6 +2,14 @@
 You build your sorted list one item at a time from left to right. 
 For each new item, you pick it up and slide it backward into its correct position among the items you've already sorted.
 """
+"""  
+key = arr[i] $\rightarrow$ Pick up a number and hold it in your hand.while j >= 0 and key < arr[j]: 
+$\rightarrow$ Look to the left. Is that number bigger than the one in your hand?arr[j + 1] = arr[j] $\rightarrow$ 
+Yes? Slide that bigger number one slot to the right.j -= 1 $\rightarrow$ Move your eyes to the next 
+box on the left.arr[j + 1] = key $\rightarrow$ When you can't go left anymore, drop the number from 
+your hand into the empty slot.
+"""
+
 
 # | Step | Sorted Hand    | Next Card | What happens                                                           |
 # | ---- | -------------- | --------- | ---------------------------------------------------------------------- |
